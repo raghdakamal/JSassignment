@@ -1,0 +1,421 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css"/> 
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<link rel="stylesheet" href="css/mdb.lite.css"/>
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Source+Sans+Pro:300,400|Kaushan+Script|Lora|Playfair+Display:700"> 
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+
+</head>
+<body>
+	<section class="col-md-12 height100">
+		<div class="row height100">
+			<div class="col-md-2"></div>
+			<div class="col-md-4" style="margin-top: 150px;">
+				<h1 style="font-weight: bold;color: white">Javascript Assignment </h1>
+				<br/>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e1">Exercise 1</button>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e2">Exercise 2</button>
+				<br/>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e3">Exercise 3</button>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e4">Exercise 4</button>
+				<br/>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e5">Exercise 5</button>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e6">Exercise 6</button>
+				<br/>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e7">Exercise 7</button>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e8">Exercise 8</button>
+				<br/>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e9">Exercise 9</button>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e10">Exercise 10</button>
+				<br/>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e11">Exercise 11</button>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e12">Exercise 12</button>
+				<br/>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e13">Exercise 13</button>
+				<button type="button" class="btn btn-dark col-md-5" data-toggle="modal" data-target="#e14">Exercise 14</button>
+
+				<br/><br/>
+				<p style="color: white;">Thanks,<br/>Raghda Kamal</p>
+
+				<!-- Exercise 1 Modal -->
+				<div class="modal fade bd-example-modal-lg" id="e1" tabindex="-1" role="dialog" >
+					<div class="modal-dialog modal-dialog-centered modal-notify  modal-primary  modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p class="heading lead">Exercise 1</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
+								<br/><br/>
+								<div id="e1Result"></div>
+							</div>
+							<div class="modal-footer justify-content-center">
+								<button type="button" class="btn btn-dark col-md-7" onClick="e1();">Solve</button>
+								<button type="button" class="btn btn-danger col-md-3" onClick="e1reset();">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Exercise 2 Modal -->
+				<div class="modal fade bd-example-modal-lg" id="e2" tabindex="-1" role="dialog" >
+					<div class="modal-dialog modal-dialog-centered modal-notify  modal-primary  modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p class="heading lead">Exercise 2</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched"
+								<br/><br/>
+								
+								<div id="e2number"></div>
+								
+								<div id="e2form" style="display: none;">
+								<br>
+
+									<div class="form-group">
+										<input type="number" class="form-control" id="numberInput" placeholder="Enter your number here">
+										<input type="text" class="form-control" id="generatedInput" hidden="">
+										<small class="form-text text-muted">We'll compare between this number and generated number.</small>
+									</div>
+								</div>
+								<div id="e2Result"></div>
+							</div>
+							<div class="modal-footer justify-content-center">
+								<button type="button" class="btn btn-dark col-md-4" onClick="e2generate();">Generate No</button>
+								<button type="button" class="btn btn-dark col-md-4" onClick="e2compare();">Compare</button>
+								<button type="button" class="btn btn-danger col-md-2" onClick="e2reset();">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Exercise 3 Modal -->
+				<div class="modal fade bd-example-modal-lg" id="e3" tabindex="-1" role="dialog" >
+					<div class="modal-dialog modal-dialog-centered modal-notify  modal-primary  modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p class="heading lead">Exercise 3</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								Write a JavaScript program to calculate multiplication and division of two numbers (input from user)
+								<br/><br/>
+								<div class="form-group">
+									<input type="number" class="form-control" id="e3Input1" placeholder="Enter your first number here">
+									<br/>
+									<input type="number" class="form-control" id="e3Input2" placeholder="Enter your second number here" >
+								</div>
+								<div id="e3Result"></div>
+							</div>
+							<div class="modal-footer justify-content-center">
+							<button type="button" class="btn btn-dark col-md-4" onClick="e3multiply();">multiply</button>
+								<button type="button" class="btn btn-dark col-md-4" onClick="e3divide();">divide</button>
+								<button type="button" class="btn btn-danger col-md-2" onClick="e3reset();">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!-- Exercise 5 Modal -->
+				<div class="modal fade bd-example-modal-lg" id="e5" tabindex="-1" role="dialog" >
+					<div class="modal-dialog modal-dialog-centered modal-notify  modal-primary  modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p class="heading lead">Exercise 5</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								Write a JavaScript program to calculate multiplication and division of two numbers (input from user)
+								<br/><br/>
+								<div class="form-group">
+									<label> Select file </label>
+									<input type="file" class="form-control" id="e5input" placeholder="Select Your File" >
+								</div>
+								<div id="e5Result"></div>
+							</div>
+							<div class="modal-footer justify-content-center">
+								<button type="button" class="btn btn-dark col-md-7" onClick="getex();">Get Extention</button>
+								<button type="button" class="btn btn-danger col-md-3" onClick="e5reset();">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+                
+                
+                <!--Exercise 6 Modal -->
+                <div class="modal fade bd-example-modal-lg" id="e6" tabindex="-1" role="dialog" >
+					<div class="modal-dialog modal-dialog-centered modal-notify  modal-primary  modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p class="heading lead">Exercise 6</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body"> Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.
+								<br/><br/>
+								<div id="e6form" >
+								<br>
+									<div class="form-group">
+										<input type="number" class="form-control" id="e6Input" placeholder="Enter your number here">
+										
+										<small class="form-text text-muted">We'll compare between this number and  13.</small>
+									</div>
+								</div>
+								<div id="e6Result"></div>
+                            </div>
+							<div class="modal-footer justify-content-center">
+								<button type="button" class="btn btn-dark col-md-7" onClick="e6compare();">Compare</button>
+								<button type="button" class="btn btn-danger col-md-3" onClick="e6reset();">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+
+                 <!--Exercise 7 Modal -->
+                 <div class="modal fade bd-example-modal-lg" id="e7" tabindex="-1" role="dialog" >
+					<div class="modal-dialog modal-dialog-centered modal-notify  modal-primary  modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p class="heading lead">Exercise 7</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body"> Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum   
+								<br/><br/>
+								<div id="e7form" >
+								<br>
+										<div class="form-group">
+										<input type="number" class="form-control" id="e7Input1" placeholder="Enter first number here">
+                                        <br/>
+										<input type="number" class="form-control" id="e7Input2" placeholder="Enter second number here">
+									</div>
+								</div>
+								<div id="e7Result"></div>
+                            </div>
+							<div class="modal-footer justify-content-center">
+								<button type="button" class="btn btn-dark col-md-7" onClick="e7sum();">Compare</button>
+								<button type="button" class="btn btn-danger col-md-3" onClick="e7reset();">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+                
+                 <!--Exercise 8 Modal -->
+                 <div class="modal fade bd-example-modal-lg" id="e8" tabindex="-1" role="dialog" >
+					<div class="modal-dialog modal-dialog-centered modal-notify  modal-primary  modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p class="heading lead">Exercise 8</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">  Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.  
+								<br/><br/>
+								<div id="e8form" >
+								<br>
+										<div class="form-group">
+										<input type="number" class="form-control" id="e8Input1" placeholder="Enter first number here">
+                                        <br/>
+										<input type="number" class="form-control" id="e8Input2" placeholder="Enter second number here">
+									</div>
+								</div>
+								<div id="e8Result"></div>
+                            </div>
+							<div class="modal-footer justify-content-center">
+								<button type="button" class="btn btn-dark col-md-7" onClick="e8compare();">Check</button>
+								<button type="button" class="btn btn-danger col-md-3" onClick="e8reset();">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+                
+                
+                 <!--Exercise 9 Modal -->
+                 <div class="modal fade bd-example-modal-lg" id="e9" tabindex="-1" role="dialog" >
+					<div class="modal-dialog modal-dialog-centered modal-notify  modal-primary  modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p class="heading lead">Exercise 9</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body"> Write a JavaScript program to check from two given integers, if one is positive and one is negative. 
+								<br/><br/>
+								<div id="e9form" >
+								<br>
+										<div class="form-group">
+										<input type="number" class="form-control" id="e9Input1" placeholder="Enter first number here">
+                                        <br/>
+										<input type="number" class="form-control" id="e9Input2" placeholder="Enter second number here">
+									</div>
+								</div>
+								<div id="e9Result"></div>
+                            </div>
+							<div class="modal-footer justify-content-center">
+								<button type="button" class="btn btn-dark col-md-7" onClick="e9check();">Check</button>
+								<button type="button" class="btn btn-danger col-md-3" onClick="e9reset();">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+           
+                  <!--Exercise 10 Modal -->
+                  <div class="modal fade bd-example-modal-lg" id="e10" tabindex="-1" role="dialog" >
+					<div class="modal-dialog modal-dialog-centered modal-notify  modal-primary  modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p class="heading lead">Exercise 10</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body"> Write a JavaScript program to check if two given integer values are in the range 50..99 (inclusive). Return true if either of them are in the said range 
+								<br/><br/>
+								<div id="e10form" >
+								<br>
+									<div class="form-group">
+										<input type="number" class="form-control" id="e10Input1" placeholder="Enter first number here">
+                                        <br/>
+										<input type="number" class="form-control" id="e10Input2" placeholder="Enter second number here">
+									</div>
+								</div>
+								<div id="e10Result"></div>
+                            </div>
+							<div class="modal-footer justify-content-center">
+								<button type="button" class="btn btn-dark col-md-7" onClick="e10check();">Check</button>
+								<button type="button" class="btn btn-danger col-md-3" onClick="e10reset();">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+           
+                
+                  <!--Exercise 11 Modal -->
+             	  <div class="modal fade bd-example-modal-lg" id="e11" tabindex="-1" role="dialog" >
+					<div class="modal-dialog modal-dialog-centered modal-notify  modal-primary  modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p class="heading lead">Exercise 11</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body"> Write a JavaScript program to find the largest of three given integers.
+								<br/><br/>
+								<div id="e11form" >
+								<br>
+										<div class="form-group">
+										<input type="number" class="form-control" id="e11Input1" placeholder="Enter first number here">
+                                        <br/>
+										<input type="number" class="form-control" id="e11Input2" placeholder="Enter second number here">
+                                        <br />
+                                        <input type="number" class="form-control" id="e11Input3" placeholder="Enter third number here">
+									</div>
+								</div>
+								<div id="e11Result"></div>
+                            </div>
+							<div class="modal-footer justify-content-center">
+								<button type="button" class="btn btn-dark col-md-7" onClick="e11Max();">Max Value</button>
+								<button type="button" class="btn btn-danger col-md-3" onClick="e11reset();">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+
+                   <!--Exercise 12 Modal -->
+                   <div class="modal fade bd-example-modal-lg" id="e12" tabindex="-1" role="dialog" >
+					<div class="modal-dialog modal-dialog-centered modal-notify  modal-primary  modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p class="heading lead">Exercise 12</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">- Write a JavaScript program to check if two numbers are in range 40..60 or in the range 70..100 inclusive 
+								<br/><br/>
+								<div id="e12form" >
+								<br>
+									<div class="form-group">
+										<input type="number" class="form-control" id="e12Input1" placeholder="Enter first number here">
+                                        <br/>
+										<input type="number" class="form-control" id="e12Input2" placeholder="Enter second number here">
+									</div>
+								</div>
+								<div id="e12Result"></div>
+                            </div>
+							<div class="modal-footer justify-content-center">
+								<button type="button" class="btn btn-dark col-md-7" onClick="e12check();">Check</button>
+								<button type="button" class="btn btn-danger col-md-3" onClick="e12reset();">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+              
+                
+                
+                   <!--Exercise 13 Modal -->
+                   <div class="modal fade bd-example-modal-lg" id="e13" tabindex="-1" role="dialog" >
+					<div class="modal-dialog modal-dialog-centered modal-notify  modal-primary  modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<p class="heading lead">Exercise 13</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" class="white-text">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body"> Write a JavaScript program to compute the sum of three elements of a given array of integers of length 3 . 
+								<br/><br/>
+								<div id="e13form" >
+								<br>
+									<div class="form-group">
+										<input type="number" class="form-control" id="e13Input1" placeholder="Enter first number here">
+                                        <br/>
+										<input type="number" class="form-control" id="e13Input2" placeholder="Enter second number here">
+                                        <br />
+                                        <input type="number" class="form-control" id="e13Input3" placeholder="Enter third number here">
+									</div>
+								</div>
+								<div id="e13Result"></div>
+                            </div>
+							<div class="modal-footer justify-content-center">
+								<button type="button" class="btn btn-dark col-md-7" onClick="e13check();">Check</button>
+								<button type="button" class="btn btn-danger col-md-3" onClick="e13reset();">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+              
+                
+			</div>
+			<div class="imageDiv col-md-6 height100"></div>
+		</div>
+	</section>
+</body>
+</html>
